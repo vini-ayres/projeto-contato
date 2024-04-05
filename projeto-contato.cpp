@@ -121,8 +121,8 @@ class Contato {
       return this->telefone;
     }
 
-    string getDtnasc() {
-      return this->dtnasc.getData();
+    Data getDtnasc() {
+      return this->dtnasc;
     }
 
     int idade(Data d) {
