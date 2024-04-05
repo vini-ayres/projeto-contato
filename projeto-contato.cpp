@@ -121,8 +121,8 @@ class Contato {
       return this->telefone;
     }
 
-    Data getDtnasc() {
-      return this->dtnasc;
+    string getDtnasc() {
+      return this->dtnasc.getData();
     }
 
     int idade(Data d) {
@@ -145,7 +145,7 @@ int main(int argc, char** argv)
   int mes;
   int ano;
   
-  for (int i = 0; i < 2; i++) {
+  for (int i = 0; i < 5; i++) {
     cout << "Cadastre o contato " << i+1 << ":" << endl;
     
     cout << "Nome: ";
@@ -176,7 +176,7 @@ int main(int argc, char** argv)
 
   cout << "Contatos cadastrados: \n" << endl;
   
-  for (int i = 0; i < 2; i++) {
+  for (int i = 0; i < 5; i++) {
     cout << "Contato " << i+1 << ":" << endl;
     cout << "Nome: " << contatos[i].getNome() << endl;
     cout << "Email: " << contatos[i].getEmail() << endl;
