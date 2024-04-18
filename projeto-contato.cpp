@@ -138,12 +138,8 @@ int main(int argc, char** argv)
 
   Contato contatos[5];
 
-  string email;
-  string nome;
-  string telefone;
-  int dia;
-  int mes;
-  int ano;
+  string email, nome, telefone;
+  int dia, mes, ano;
   
   for (int i = 0; i < 5; i++) {
     cout << "Cadastre o contato " << i+1 << ":" << endl;
